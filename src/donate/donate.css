@@ -1,0 +1,105 @@
+.card-custom{
+    border-radius: 0;
+    z-index: 999;
+}
+.photo{
+    width: 300px;
+    height: 300p;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+}
+.container{
+    width: 50%;
+}
+.zigzag{
+    display: block;width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgb(86, 222, 8);
+    clip-path: polygon(84% 36%, 82% 17%, 100% 0, 100% 100%, 0 100%, 8% 81%, 34% 69%, 47% 49%);
+
+}
+.card-custom .form-control{
+    border-radius: 0;
+    
+}
+.card-custom button{
+    border-radius: 0;
+    background: chocolate;
+}
+.progress-container {
+    border: 2px solid #edf5fe;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+}
+  .progress-container .inner-container {
+    margin: 10px 15px;
+    z-index: 2;
+    position: absolute;
+    width: calc(100% - 30px);
+}
+  
+  .progress-container .percent-container {
+    font-size: 14px;
+    margin: 5px;
+    opacity: 0.7;
+}
+  
+  .progress-container .bg-progress {
+    position: absolute;
+    background: #edf5fe;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: transform 250ms linear;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+  
+  .progress-container .progress-bar {
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background: #03a9f4;
+    transition: transform 200ms linear;
+    transform: scaleX(0);
+    transform-origin: left;
+}  
+/* alert box */
+.alertBox{
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 150px;
+    z-index: 99999;
+    border: 2px solid rgb(180, 180, 180);
+    border-style: outset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    display: none;
+}
+.messageBox{
+    color: red;
+    margin-top: 10px;
+}
+.alertBtn{
+    margin-bottom: 10px;
+}
+@media (max-width: 700px){
+    .container{
+        width: 90%;
+    }
+    .photo{
+        visibility: hidden;
+    }
+}

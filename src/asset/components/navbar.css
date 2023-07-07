@@ -1,0 +1,111 @@
+.nav_bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.collapseBtn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+    right: 5%;
+    visibility:hidden;
+}
+.navItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aquamarine;
+    border: 2px solid seagreen;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.brandlogo {
+    max-width: 50px;
+    max-height: 60px;
+    margin-left: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.nav_item {
+    text-decoration: none;
+}
+
+.item {
+    text-decoration: none;
+}
+
+.nav_content {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.notlogin {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.onLogin{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.button:hover {
+   background: rgb(95, 94, 94);
+}
+.button{
+    height: 30px;
+    border: 2px solid rgb(134, 134, 134);
+    border-radius: 5px;
+    border-style: outset;
+}
+.logo-img{
+    height: 25px;
+    max-width: 30px;
+    visibility: visible;
+}
+
+
+/*  samller  */
+@media (max-width: 700px) {
+    .expand_logo{
+        display:inline-block;
+        width: 30px;
+        height: 30px;
+    }
+    .brand_logo{
+        display: none;
+    }
+    .navItem{
+        flex-direction: column;
+        height: 50px;
+    }
+    .nav_content{
+        flex-direction: column;
+    }
+    .nav_bar{
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .collapseBtn{
+        visibility: visible;
+    }
+}

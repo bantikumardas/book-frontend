@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+
+.cards {
+    width: 300px;
+    height: 400px;
+    flex-basis: calc(33.33% - 10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(65, 65, 65);
+    border-style: outset;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.cards:hover {
+    box-shadow: 0 0 20px 10px rgb(159, 158, 159);
+    transform: scale(1.01);
+    /* Increase the scale on hover */
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* .image , img{
+    width: 200px;
+    height: 170px;
+} */
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: 0rem;
+
+}
+
+.auther {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    max-lines: 1;
+}
+
+.downloadBtn {
+    background: chartreuse;
+}
+
+.downloadBtn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 550px){
+    .cards {
+        width: 370px;
+        height: 400px;
+    }
+}
