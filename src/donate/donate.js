@@ -80,7 +80,7 @@ const Donate = () => {
         const { bookName, authorName, publisherName, bookDescription, termChecked } = data;
         const id = localStorage.getItem('id');
         if (!id) alert('please login');
-        const url = 'http://localhost:3000/api/file/upload';
+        const url = 'https://bookbackend-nhwq.onrender.com/api/file/upload';
         const formData = new FormData();
         formData.append('myfiles', selectedFile);
         formData.append('bookName', bookName);
